@@ -13,7 +13,7 @@ const App = () => {
         className='search'
         placeholder='Search...'
         value={query}
-        onChange={}
+        onChange={(e) => setQuery(e.target.value)}
       />
     </div>
   )
