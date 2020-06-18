@@ -4,6 +4,8 @@ import { fetchWeather } from './api/fetchWeather'
 import './App.css'
 
 const App = () => {
+  const [query, setQuery] = useState('')
+
   return (
     <div className='main-container'>
       <input
