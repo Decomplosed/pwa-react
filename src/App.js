@@ -6,6 +6,8 @@ import './App.css'
 const App = () => {
   const [query, setQuery] = useState('')
 
+  const search = async (e) => {}
+
   return (
     <div className='main-container'>
       <input
