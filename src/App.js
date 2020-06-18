@@ -12,7 +12,7 @@ const App = () => {
         type='text'
         className='search'
         placeholder='Search...'
-        value={}
+        value={query}
         onChange={}
       />
     </div>
