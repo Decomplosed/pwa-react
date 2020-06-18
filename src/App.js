@@ -6,7 +6,10 @@ import './App.css'
 const App = () => {
   const [query, setQuery] = useState('')
 
-  const search = async (e) => {}
+  const search = async (e) => {
+    if (e.key === 'Enter') {
+    }
+  }
 
   return (
     <div className='main-container'>
