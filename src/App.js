@@ -12,6 +12,7 @@ const App = () => {
       const data = await fetchWeather(query)
 
       setWeather(data)
+      setQuery('')
     }
   }
 
