@@ -26,4 +26,5 @@ self.addEventListener('fetch', (e) => {
 //Activate the SW
 self.addEventListener('activate', (e) => {
   const cacheWhitelist = []
+  cacheWhitelist.push(CACHE_NAME)
 })
