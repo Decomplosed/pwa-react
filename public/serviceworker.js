@@ -7,5 +7,7 @@ const self = this
 self.addEventListener('install', (e) => {})
 
 // Listen for request
+self.addEventListener('fetch', (e) => {})
 
-self.addEventListener('install', (e) => {})
+//Activate the SW
+self.addEventListener('activate', (e) => {})
