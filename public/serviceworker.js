@@ -16,7 +16,11 @@ self.addEventListener('install', (e) => {
 
 // Listen for request
 self.addEventListener('fetch', (e) => {
-  e.respondWith(caches.match(e.request))
+  e.respondWith(
+    caches.match(e.request).then(() => {
+      return fetch(e.request)
+    })
+  )
 })
 
 //Activate the SW
