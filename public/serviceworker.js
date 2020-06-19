@@ -24,4 +24,6 @@ self.addEventListener('fetch', (e) => {
 })
 
 //Activate the SW
-self.addEventListener('activate', (e) => {})
+self.addEventListener('activate', (e) => {
+  const cacheWhitelist = []
+})
