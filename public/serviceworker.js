@@ -5,7 +5,9 @@ const self = this
 
 // Install SW
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE_NAME))
+  e.waitUntil(caches.open(CACHE_NAME)).then((cache) => {
+    console.log('Opened cache')
+  })
 })
 
 // Listen for request
